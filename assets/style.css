@@ -110,3 +110,15 @@ main > div {
     background-color: #0072bb;
     color: #ffffff; */
 }
+
+@media screen and (min-width: 400px) {
+  header {
+      padding: 5px 25%;
+  }
+}
+
+@media (max-width: 630px) {
+  main{
+      flex-direction: column; /*overrides previous commands, turns rows to colums  */
+  }
+}
