@@ -15,6 +15,9 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    color: white;
+    background-image: url('./images/pexels-miriam-espacio-110854.jpg');
+    background-size: cover;
 }
 
 img {

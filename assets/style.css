@@ -6,15 +6,30 @@ h1 {
 
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+
 .text-center {
   text-align: center;
 
 }
 
+.column-gap {
+  column-gap: 25px;
+}
+
+
 
 .row,
 .column {
   display: flex;
+}
+
+.row {
+  flex-direction: column;
 }
 
 .column {
@@ -42,14 +57,26 @@ h1 {
 .header {
   padding: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #2a607c;
+  background-color: #021c35;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.header h2 {
+  text-align: center;
+}
+
+/* .header nav ul {
+  display: flex;
+  align-items: center;
+} */
 
 .header nav ul li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 25px;
 }
 
@@ -62,6 +89,16 @@ main {
 
 main .container.large {
   grid-column: 1 / 3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
 }
 
 main > div {
@@ -83,12 +120,20 @@ main > div {
   margin: 20px 0;
   justify-content: center;
   align-items: center;
+  
+  width: 100%
+}
+
+.about p {
+  height: 150px !important;
 }
 
 .about img{
   width: 25%;
 
 }
+
+
 
 /* .container img {
     display: flex;
